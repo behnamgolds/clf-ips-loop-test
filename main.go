@@ -35,7 +35,7 @@ func main() {
 			addr = addr.Next() // since we skip the first address, the isNetworkID()
 			//is irrelevant here and should be removed
 			if pfx.Contains(addr) && !isNetworkID(pfx, addr) && !isBroadcast(pfx, addr) {
-				fmt.Printf("%v/%v\n", addr, pfx.Bits())
+				fmt.Printf("%v\n", addr)
 			} else {
 				break
 			}
